@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RamenGo</title> 
+<script type="module" crossorigin src="/assets/index-WSpvVSWg.js"></script>
+<link rel="stylesheet" crossorigin href="/assets/index-CTVgfSMG.css">
+
+<body>
+    <div class="main" id="main-page">
+        <div class="cover pattern-bg">
+            <img src="/assets/Capa%20Mobile-BwXEKo5l.png" class="cover-mobile">
+            <img src="/assets/capa-desktop-Ds_ejY7o.png" class="cover-desktop">
+            
+            <!--desktop cover text-->
+            <div class="desktop-cover-text">
+                <p class="cover-desktop-text">Enjoy a good ramen in the comfort of your house. Create your own ramen and choose your favorite flavour combination!</p>
+                <button class="cover-btn" id="cover-btn">
+                    Order now
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADzSURBVHgBrZTNDYJAEEa/8eduB6Ji4tUKlA7sQK1AOhArsAU7QQ/evWvidqBHEzHjLBAFIjG78BImLCwPZphdwAAORw7v3RuHblA2pwEjHncJHRDWZVIjIXnqDqZlMoilPuqAD+5aUuf4OAzmuZfCEi0FI5BT/dUeeedTJWEq3YrUT6TRWEqiYiGHjgNbqLWVOBOLAr884v3wKgMHtcDKsG3+k6R87HVhy7O5kzj9pIwKxM0t/YjMT7FOOS/TbaOUvt6CBRmZFI19ml5OsIXD/uK7Soar4n2jGurdBhRd0ycDmlw2xTmGKevdpq0kzd0vmeYNHGluTc579l8AAAAASUVORK5CYII=" id="icon-btn">
+                </button>
+            </div>
+            <!--Mobile cover text-->
+            <p class="font-bold GO-text">GO!</p>
+            <p class="cover-mobile-text font-regular">Enjoy a good ramen in the comfort of your house. 
+                Create your own ramen and choose your favorite flavour combination!
+            </p>
+        </div>
+
+        <div class="content-div">
+            <!--mobile broth selection-->
+                <div class="broth-section">
+                    <h2>
+                        First things first: select your favorite broth.
+                    </h2>
+                    <p>
+                        It will give the whole flavor on your ramen soup. 
+                    </p>
+                    <!--Mobile Broth selection-->
+                    <div class="carousel">
+                        <div class="slides">
+                            <div class="slide-out">
+                                <div class="slide" id="salt-1">
+                                    <img src="" class="carousel-img" alt="Slide 1">
+                                    <h3 id="broth-title"></h3>
+                                    <p id="broth-description"></p>
+                                    <p id="broth-price"></p>
+                                </div>
+                            </div>
+                            <div class="slide-out">
+                                <div class="slide" id="shoyu-2">
+                                    <img src="" class="carousel-img" alt="Slide 2">
+                                    <h3 id="broth-title"></h3>
+                                    <p id="broth-description"></p>
+                                    <p id="broth-price"></p>
+                                </div>
+                            </div>
+                            <div class="slide-out">
+                                <div class="slide" id="miso-3">
+                                    <img src="" class="carousel-img" alt="Slide 3">
+                                    <h3 id="broth-title"></h3>
+                                    <p id="broth-description"></p>
+                                    <p id="broth-price"></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="indicators">
+                            <div class="indicator active" data-index="0"></div>
+                            <div class="indicator" data-index="1"></div>
+                            <div class="indicator" data-index="2"></div>
+                        </div>
+                    </div>
+                </div>
+            <!--End mobile Broth selection-->
+
+                <!-- Desktop broth selection-->
+                <div class="desktop-broth-selection">
+                    <div class="broth-cards">
+                        <div class="broth-card-out">
+                            <div class="broth-card" id="salt-1">
+                                <img src="" class="card-img" alt="broth-card 1">
+                                <h3 id="broth-title"></h3>
+                                <p id="broth-description"></p>
+                                <p id="broth-price"></p>
+                            </div>
+                        </div>
+                        <div class="broth-card-out">
+                            <div class="broth-card" id="shoyu-2">
+                                <img src="" class="card-img" alt="broth-card 2">
+                                <h3 id="broth-title"></h3>
+                                <p id="broth-description"></p>
+                                <p id="broth-price"></p>
+                            </div>
+                        </div>
+                        <div class="broth-card-out">
+                            <div class="broth-card" id="miso-3">
+                                <img src="" class="card-img" alt="broth-card 3">
+                                <h3 id="broth-title"></h3>
+                                <p id="broth-description"></p>
+                                <p id="broth-price"></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            <!--Protein Section-->
+            <div class="protein-section">
+                <h2>
+                    It's time to choose (or not) your meat!                
+                </h2>
+                <p>
+                    Some people love, some don't. We have options for all tastes.                
+                </p>
+                <!--Mobile carousel Protein selection-->
+                <div class="protein-carousel">
+                    <div class="protein-slides">
+                        <div class="protein-slide-out">
+                            <div class="protein-slide" id="chasu-1">
+                                <img src="" class="carousel-img" alt="Slide 1">
+                                <h3 id="protein-title"></h3>
+                                <p id="protein-description"></p>
+                                <p id="protein-price"></p>
+                            </div>
+                        </div>
+                        <div class="protein-slide-out">
+                            <div class="protein-slide" id="yasai-2">
+                                <img src="" class="carousel-img" alt="Slide 2">
+                                <h3 id="protein-title"></h3>
+                                <p id="protein-description"></p>
+                                <p id="protein-price"></p>
+                            </div>
+                        </div>
+                        <div class="protein-slide-out">
+                            <div class="protein-slide" id="karaague-3">
+                                <img src="" class="carousel-img" alt="Slide 3">
+                                <h3 id="protein-title"></h3>
+                                <p id="protein-description"></p>
+                                <p id="protein-price"></p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="protein-indicators">
+                        <div class="protein-indicator active" data-index="0"></div>
+                        <div class="protein-indicator" data-index="1"></div>
+                        <div class="protein-indicator" data-index="2"></div>
+                    </div>
+                </div>
+                <!--End Mobile carousel Protein selection-->
+
+                <!-- Desktop protein selection-->
+                <div class="desktop-protein-selection">
+                    <div class="protein-cards">
+                        <div class="protein-card-out">
+                            <div class="protein-card" id="chasu-1">
+                                <img src="" class="protein-card-img" alt="protein-card 1">
+                                <h3 id="protein-title"></h3>
+                                <p id="protein-description"></p>
+                                <p id="protein-price"></p>
+                            </div>
+                        </div>
+                        <div class="protein-card-out">
+                            <div class="protein-card" id="yasai-2">
+                                <img src="" class="protein-card-img" alt="protein-card 2">
+                                <h3 id="protein-title"></h3>
+                                <p id="protein-description"></p>
+                                <p id="protein-price"></p>
+                            </div>
+                        </div>
+                        <div class="protein-card-out">
+                            <div class="protein-card" id="karaague-3">
+                                <img src="" class="protein-card-img" alt="protein-card 3">
+                                <h3 id="protein-title"></h3>
+                                <p id="protein-description"></p>
+                                <p id="protein-price"></p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+
+                <div class="action-div">
+                    <button id="send-order" class="primary-btn">
+                        Place my order
+                        <img src="data:image/svg+xml,%3csvg%20width='20'%20height='16'%20viewBox='0%200%2020%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M19.7115%207.23199L13.3586%200.298656C12.9845%20-0.11041%2012.3878%20-0.0976104%2012.0278%200.326923C11.6673%200.751457%2011.6786%201.42666%2012.0532%201.83519L16.7247%206.93333H0.941176C0.421176%206.93333%200%207.41119%200%207.99999C0%208.58933%200.421176%209.06666%200.941176%209.06666H16.7247L12.0532%2014.1653C11.6786%2014.5739%2011.6673%2015.2491%2012.0278%2015.6736C12.2127%2015.8907%2012.4588%2016%2012.7059%2016C12.9407%2016%2013.176%2015.9013%2013.3586%2015.7019L19.7115%208.76853C19.896%208.56746%2020%208.29013%2020%207.99999C20%207.71039%2019.896%207.43306%2019.7115%207.23199Z'%20fill='white'/%3e%3c/svg%3e" id="icon-btn">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="success-div" id="success-page">
+        <div class="sucess-cover pattern-blue-bg">
+            <img src="" class="ramen-img" id="ramen-img">
+            <p class="font-bold order-text-intro">Your order!</p>
+            <p class="order-success-text font-regular" id="order-description">
+            </p>
+        </div>
+        <div class="sucess-content">
+            <img src="data:image/png;base64,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" class="bowing-img">
+            <p class="sucess-jpn-text">どもありがとうございます。</p>
+            <p class="sucess-main-text">Your order is being prepared</p>
+            <p class="sucess-text">Hold on, when you least expect you will be eating your rámen. </p>
+            <div class="reorder-action-div">
+                <button id="re-order" class="primary-btn">
+                    Place new order
+                    <img src="data:image/svg+xml,%3csvg%20width='20'%20height='16'%20viewBox='0%200%2020%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M19.7115%207.23199L13.3586%200.298656C12.9845%20-0.11041%2012.3878%20-0.0976104%2012.0278%200.326923C11.6673%200.751457%2011.6786%201.42666%2012.0532%201.83519L16.7247%206.93333H0.941176C0.421176%206.93333%200%207.41119%200%207.99999C0%208.58933%200.421176%209.06666%200.941176%209.06666H16.7247L12.0532%2014.1653C11.6786%2014.5739%2011.6673%2015.2491%2012.0278%2015.6736C12.2127%2015.8907%2012.4588%2016%2012.7059%2016C12.9407%2016%2013.176%2015.9013%2013.3586%2015.7019L19.7115%208.76853C19.896%208.56746%2020%208.29013%2020%207.99999C20%207.71039%2019.896%207.43306%2019.7115%207.23199Z'%20fill='white'/%3e%3c/svg%3e" id="icon-btn">
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
