@@ -1,0 +1,1122 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap');
+
+
+/* Style-Guide :) */
+/* 0- Root variables and root elements adjustments */
+/* 1-Fonts */
+/* 2-Colors classes */
+/* 3-Components and style classes */
+/* 3.1-DIV classes */
+/* 3.2-Widgets classes */
+/* 3.2.1-desktop widgets classes */
+/* 3.2.2-broth carousel classes */
+/* 3.2.3-Protein carousel classes */
+/* 3.3-buttons classes */
+/* 3.4-Style classes (especific borders, positions or animations) */
+/* 4-responsiveness classes */
+/* 4.1-responsiveness mobile classes */
+/* 4.2-responsiveness tablet classes */
+/* 4.3-responsiveness desktop classes */
+
+
+/* 0- Root variables and root elements adjustments */
+:root {
+    --color-black: #000000;
+    --color-blue: #1820EF;
+    --color-red: #FF4E42;
+    --color-yellow: #FFC024;
+    --color-white: #FAFAED;
+}
+
+body {
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+p{
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+button{
+    cursor: pointer;
+}
+/* 1-Fonts */
+.font-black {
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.font-extrabold {
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.font-bold {
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.font-medium {
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.font-regular {
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.font-light {
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.font-thin {
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+/* 3-Components and style classes */
+/* 3.1-DIV classes */
+.main{
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+.content-div{
+    background-color: var(--color-white);
+    padding: 2%;
+}
+
+.broth-section{
+    text-align: center;
+}
+
+.protein-section{
+    text-align: center;
+    margin-top: 10%;
+}
+
+.action-div{
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.success-div{
+    display: none;
+    overflow-x: hidden;
+    flex-direction: column;
+}
+
+.reorder-action-div{
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+/* 3.2-Widgets classes */
+/* 3.2.1 - desktop Widgets classes */
+.broth-cards {
+    display: flex;
+    flex-direction: row;
+    margin-top: 4%;
+}
+
+.broth-card-out {
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+}
+
+.broth-card {
+    width: 65%; 
+    text-align: center; 
+    padding: 1rem; 
+    box-shadow: 0px 4px 12px 0px #E0DBBF99;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.broth-card:hover{
+    transform: scale(1.1);
+}
+
+.broth-card.active{
+    background-color: #1820EF;
+}
+
+.broth-card.active > #broth-title{
+    color: white;
+}
+
+.broth-card.active > #broth-description{
+    color: white;
+}
+
+.broth-card.active > #broth-price{
+    color: var(--color-yellow);
+}
+
+#broth-title {
+    color: var(--color-blue);
+    font-weight: 900;
+}
+
+#broth-description {
+    color: #000000;
+    font-size: 14px;
+}
+
+#broth-price {
+    color: var(--color-red);
+    font-weight: 900;
+    font-size: 20px;
+    margin-top: 2em;
+}
+
+.protein-cards {
+    display: flex;
+    flex-direction: row;
+    margin-top: 4%;
+}
+
+.protein-card-out {
+    display: flex;
+    width: 100%;
+    justify-content: center; 
+}
+
+.protein-card {
+    width: 65%; 
+    text-align: center; 
+    padding: 1rem; 
+    box-shadow: 0px 4px 12px 0px #E0DBBF99;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+.protein-card:hover{
+    transform: scale(1.1);
+}
+
+.protein-card.active{
+    background-color: #1820EF;
+}
+
+.protein-card.active > #protein-title{
+    color: white;
+}
+
+.protein-card.active > #protein-description{
+    color: white;
+}
+
+.protein-card.active > #protein-price{
+    color: var(--color-yellow);
+}
+
+#protein-title {
+    color: var(--color-blue);
+    font-weight: 900;
+}
+
+#protein-description {
+    color: #000000;
+    font-size: 14px;
+}
+
+#protein-price {
+    color: var(--color-red);
+    font-weight: 900;
+    font-size: 20px;
+    margin-top: 2em;
+}
+
+
+/* 3.2.2-broth carousel classes */
+.carousel {
+    width: 100%; 
+    margin-top: 5%;
+    overflow: hidden; 
+    position: relative;
+    transition: transform 0.3s ease-in-out
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.3s ease-in-out; 
+}
+
+.slide-out {
+    flex: 0 0 100%;
+    display: flex;
+    justify-content: center; 
+}
+
+.slide {
+    width: 65%; 
+    text-align: center; 
+    padding: 1rem; 
+    box-shadow: 0px 4px 12px 0px #E0DBBF99;
+    border-radius: 10px;
+}
+
+.indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.25rem; 
+    transition: transform 0.3s ease-in-out
+}
+
+.indicator {
+    cursor: pointer;
+    margin: 0 0.5rem; 
+    width: 10px;
+    height: 10px;
+    border-radius: 8px;
+    background-color: #E0DBBF;
+}
+
+.indicator.active {
+    background-color: var(--color-red);
+    width: 36px;
+    height: 12px; 
+}
+
+.slide.active{
+    background-color: #1820EF;
+}
+
+.slide.active > #broth-title{
+    color: white;
+}
+
+.slide.active > #broth-description{
+    color: white;
+}
+
+.slide.active > #broth-price{
+    color: var(--color-yellow);
+}
+
+/* 3.2.3-Protein carousel classes */
+#protein-title {
+    color: var(--color-blue);
+    font-weight: 900;
+}
+
+#protein-description {
+    color: #000000;
+    font-size: 14px;
+}
+
+#protein-price {
+    color: var(--color-red);
+    font-weight: 900;
+    font-size: 20px;
+    margin-top: 2em;
+}
+
+.protein-carousel {
+    width: 100%; 
+    margin-top: 5%;
+    overflow: hidden; 
+    position: relative;
+    transition: transform 0.3s ease-in-out
+}
+
+.protein-slides {
+    display: flex;
+    transition: transform 0.3s ease-in-out; 
+}
+
+.protein-slide-out {
+    flex: 0 0 100%;
+    display: flex;
+    justify-content: center; 
+}
+
+.protein-slide {
+    width: 65%; 
+    text-align: center; 
+    padding: 1rem; 
+    box-shadow: 0px 4px 12px 0px #E0DBBF99;
+    border-radius: 10px;
+}
+
+.protein-indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.25rem; 
+    transition: transform 0.3s ease-in-out;
+}
+
+.protein-indicator {
+    cursor: pointer;
+    margin: 0 0.5rem; 
+    width: 10px;
+    height: 10px;
+    border-radius: 8px;
+    background-color: #E0DBBF;
+}
+
+.protein-indicator.active {
+    background-color: var(--color-red);
+    width: 36px;
+    height: 12px; 
+}
+
+.protein-slide.active{
+    background-color: #1820EF;
+}
+
+.protein-slide.active > #protein-title{
+    color: white;
+}
+
+.protein-slide.active > #protein-description{
+    color: white;
+}
+
+.protein-slide.active > #protein-price{
+    color: var(--color-yellow);
+}
+/* 3.3-buttons classes */
+.primary-btn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    background-color:#C5C5C5;
+    border: solid 0px transparent;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 8em;
+    padding: 1.2em;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+.primary-btn:hover{
+    background-color: var(--color-blue);
+}
+.primary-btn.active{
+    background-color: var(--color-blue);
+}
+
+.primary-btn.active > .icon-btn{
+    fill: var(--color-yellow);
+}
+/* 3.4-Style classes (especific borders, positions or animations) */
+.sucess-jpn-text{
+    color: var(--color-yellow);
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.sucess-main-text{
+    color: var(--color-red);
+    font-weight: 900;
+    font-size: 24px;
+    margin: 1em 0em 1em 0em;
+}
+
+.order-text-intro{
+    color: white;
+    font-weight: 900;
+}
+
+.order-success-text{
+    color: var(--color-yellow);
+    font-weight: 900;
+    font-size: 24px;
+}
+/* 4-responsiveness classes */
+/* 4.1-responsiveness mobile classes */
+@media (min-width: 320px) and (max-width: 767px) { 
+.desktop-broth-selection{
+    display: none;
+}
+
+.cover{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 4%;
+        position: relative;
+}
+
+.sucess-cover{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10%;
+    text-align: center;
+}
+
+.cover-mobile{
+    width: 55%;
+}
+
+.cover-desktop{
+    display: none;
+}
+
+.cover-mobile-text{
+    text-align: center;
+    font-size: 16px;
+    color: white;
+    padding-bottom: 2%;
+}
+
+.desktop-cover-text{
+    display: none;
+}
+
+.GO-text{
+        font-size: 100px;
+        color: white;
+}
+
+.pattern-bg {
+        height: auto; 
+        background-image: url('./assets/pattern-vermelha.png');
+        background-repeat: repeat;
+        background-size: 300px 300px;
+}
+
+.pattern-blue-bg {
+    height: auto; 
+    background-image: url('./assets/pattern-azul.png');
+    background-repeat: repeat;
+    background-size: 300px 300px;
+}
+
+.sucess-content{
+    display: flex;
+    padding: 4%;
+    padding-top: 4em;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color:var(--color-white);
+    height: 50vh;
+}
+
+.carousel-img{
+        width: 30%;
+}
+
+.ramen-img{
+    width: 50%;
+    position: static;
+}
+.desktop-protein-selection{
+display: none;
+}
+
+}
+
+/* 4.2-responsiveness tablet classes */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+.cover{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2% 2% 6% 2%;  
+        position: relative;
+}
+
+.cover-mobile-text{
+    display: none;
+}
+
+.desktop-cover-text{
+    width: 20%;
+    position: absolute;
+    left: 27%;
+    top: 59%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.GO-text{
+    display: none;
+}
+.carousel{
+    display: none;
+}
+
+.protein-carousel {
+    display: none;
+}
+
+.cover-mobile{
+    display: none;
+}
+
+.cover-desktop{
+    width: 50%;
+}
+
+
+.pattern-bg {
+    height: auto; 
+    background-image: url('./assets/pattern-vermelha.png');
+    background-repeat: repeat;
+    background-size: 300px 300px;
+}
+
+.pattern-blue-bg {
+height: auto; 
+background-image: url('./assets/pattern-azul.png');
+background-repeat: repeat;
+background-size: 300px 300px;
+}
+
+.primary-btn {
+    font-size: 10px;
+    padding: 0.9em;
+    justify-content: space-between;
+}
+
+.sucess-cover{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    text-align: center;
+}
+
+.cover-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    background-color:#C5C5C5;
+    border: solid 0px transparent;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 8em;
+    font-weight: 800;
+    letter-spacing: 2px;
+    font-size: 10px;
+    padding: 0.9em;
+    background-color: var(--color-blue);
+    justify-content: space-between;
+}
+.cover-desktop-text{
+    font-size: 12px;
+    color: white;
+}
+
+.ramen-img{
+    position: static;
+    width: 70%;
+}
+
+.sucess-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    overflow: hidden;
+    text-align: center;
+    background-color: var(--color-white);
+    height: 100vh;
+}
+
+.success-div{
+    flex-direction: row;
+    overflow: hidden;
+}
+
+}
+
+/* 4.3-responsiveness desktop classes */
+
+@media (min-width: 1024px) and (max-width: 1279px) { 
+
+.cover{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2% 2% 6% 2%;  
+        position: relative;
+}
+
+.cover-mobile-text{
+    display: none;
+}
+
+.desktop-cover-text{
+    width: 19%;
+    position: absolute;
+    left: 27%;
+    top: 59%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.GO-text{
+    display: none;
+}
+
+.carousel{
+        display: none;
+}
+
+.protein-carousel {
+        display: none;
+}
+
+.cover-mobile{
+        display: none;
+}
+
+.cover-desktop{
+    width: 50%;
+}
+
+.pattern-bg {
+        height: auto; 
+        background-image: url('./assets/pattern-vermelha.png');
+        background-repeat: repeat;
+        background-size: 300px 300px;
+}
+
+.pattern-blue-bg {
+    height: auto; 
+    background-image: url('./assets/pattern-azul.png');
+    background-repeat: repeat;
+    background-size: 300px 300px;
+}
+
+.cover-desktop-text{
+    color: white;
+}
+.sucess-cover{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    text-align: center;
+}
+
+.primary-btn {
+    font-size: 12px;
+    padding: 1em;
+    justify-content: space-between;
+}
+
+.sucess-cover{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    text-align: center;
+}
+
+.ramen-img{
+    position: static;
+    width: 40%;
+}
+
+.cover-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    background-color:#C5C5C5;
+    border: solid 0px transparent;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 8em;
+    font-weight: 800;
+    letter-spacing: 2px;
+    font-size: 12px;
+    padding: 1em;
+    background-color: var(--color-blue);
+    justify-content: space-between;
+}
+
+.sucess-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    overflow: hidden;
+    text-align: center;
+    background-color: var(--color-white);
+    height: 100vh;
+}
+
+.success-div{
+    flex-direction: row;
+    overflow: hidden;
+}
+
+
+}
+
+@media (min-width: 1280px) and (max-width: 1535px) { 
+
+.cover{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2% 2% 5% 2%;  
+        position: relative;
+}
+
+.desktop-cover-text{
+    width: 15%;
+    position: absolute;
+    left: 31%;
+    top: 58%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.cover-mobile-text{
+    display: none;
+}
+
+.cover-desktop{
+    width: 40%;
+}
+
+.GO-text{
+    display: none;
+}
+
+.carousel{
+        display: none;
+}
+
+.protein-carousel {
+        display: none;
+}
+
+.cover-mobile{
+        display: none;
+}
+
+.pattern-bg {
+    height: auto; 
+    background-image: url('./assets/pattern-vermelha.png');
+    background-repeat: repeat;
+    background-size: 300px 300px;
+}
+
+.pattern-blue-bg {
+height: auto; 
+background-image: url('./assets/pattern-azul.png');
+background-repeat: repeat;
+background-size: 300px 300px;
+}
+
+.cover-desktop-text{
+    color: white;
+}
+
+.primary-btn {
+    padding: 1em;
+    justify-content: space-between;
+}
+
+.sucess-cover{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    text-align: center;
+}
+
+.cover-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    background-color:#C5C5C5;
+    border: solid 0px transparent;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 8em;
+    font-weight: 800;
+    letter-spacing: 2px;
+    font-size: 12px;
+    padding: 1em;
+    background-color: var(--color-blue);
+    justify-content: space-between;
+}
+
+.ramen-img{
+    position: static;
+    width: 45%;
+}
+
+.sucess-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    overflow: hidden;
+    text-align: center;
+    background-color: var(--color-white);
+    height: 100vh;
+}
+
+.success-div{
+    flex-direction: row;
+    overflow: hidden;
+}
+
+}
+
+@media (min-width: 1536px) and (max-width: 2559px) { 
+
+.cover{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2% 2% 5% 2%;        
+        position: relative;
+}
+
+.desktop-cover-text{
+    width: 15%;
+    position: absolute;
+    left: 32%;
+    top: 58.5%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.carousel{
+        display: none;
+}
+
+.protein-carousel {
+        display: none;
+}
+
+
+.cover-mobile{
+        display: none;
+}
+
+.cover-desktop{
+    width: 38%;
+}
+
+
+.cover-mobile-text{
+    display: none;
+}
+
+.GO-text{
+    display: none;
+}
+
+
+.pattern-bg {
+    height: auto; 
+    background-image: url('./assets/pattern-vermelha.png');
+    background-repeat: repeat;
+    background-size: 300px 300px;
+}
+
+.pattern-blue-bg {
+height: auto; 
+background-image: url('./assets/pattern-azul.png');
+background-repeat: repeat;
+background-size: 300px 300px;
+}
+
+.cover-desktop-text{
+    color: white;
+}
+
+.sucess-cover{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    text-align: center;
+}
+
+.ramen-img{
+    position: static;
+    width: 50%;
+}
+
+.cover-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    background-color:#C5C5C5;
+    border: solid 0px transparent;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 8em;
+    padding: 1.2em;
+    font-weight: 800;
+    letter-spacing: 2px;
+    background-color: var(--color-blue);
+    justify-content: space-between;
+}
+
+.sucess-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    overflow: hidden;
+    text-align: center;
+    background-color: var(--color-white);
+    height: 100vh;
+}
+
+.success-div{
+    flex-direction: row;
+    overflow: hidden;
+}
+
+}
+
+@media (min-width: 2560px) { 
+
+.carousel{
+        display: none;
+}
+
+.protein-carousel {
+        display: none;
+}
+
+.cover{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2% 2% 3% 2%;  
+    position: relative;
+}
+
+.desktop-cover-text{
+width: 12%;
+position: absolute;
+left: 33.5%;
+top: 62%;
+display: flex;
+flex-direction: column;
+gap: 15px;
+}
+
+.cover-mobile{
+        display: none;
+}
+
+.cover-desktop{
+    width: 35%;
+}
+
+.cover-mobile-text{
+    display: none;
+}
+
+.GO-text{
+    display: none;
+}
+
+.pattern-bg {
+    height: auto; 
+    background-image: url('./assets/pattern-vermelha.png');
+    background-repeat: repeat;
+    background-size: 300px 300px;
+}
+
+.pattern-blue-bg {
+height: auto; 
+background-image: url('./assets/pattern-azul.png');
+background-repeat: repeat;
+background-size: 300px 300px;
+}
+
+.cover-desktop-text{
+    color: white;
+}
+
+.cover-btn{
+    justify-content: center;
+    gap: 15px;
+    background-color: var(--color-blue);
+    justify-content: space-between;
+}
+
+.sucess-cover{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    text-align: center;
+}
+
+.sucess-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    overflow: hidden;
+    text-align: center;
+    background-color: var(--color-white);
+    height: 100vh;
+}
+
+.ramen-img{
+    position: static;
+    width: 50%;
+}
+
+.success-div{
+    flex-direction: row;
+    overflow: hidden;
+}
+
+}
