@@ -16,7 +16,7 @@ export function getBroth() {
         return response.data;
     })
     .catch(function(error) {
-        console.error('Erro ao buscar os dados da API:', error);
+        console.error('Erro ao buscar os dados daa API:', error);
     });
 }
 
